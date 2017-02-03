@@ -1,5 +1,13 @@
-<h1>New Topic</h1>
+<%= render 'layouts/nav' %>
+
+<blockquote>
+    <h5>Every topic counts!</h5>
+</blockquote><br>
 
 <%= render 'form', topic: @topic %>
 
-<%= link_to 'Back', topics_path %>
+<br><center>
+    <button class="btn waves-effect waves-light">
+        <%= link_to 'Back', topics_path %>
+    </button>
+</center>
